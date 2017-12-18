@@ -113,11 +113,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-# Custom
-package-lock.json
-index.html
-css.css
-script.js
-less.less
-coffee.coffee
