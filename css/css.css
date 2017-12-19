@@ -16,32 +16,34 @@ footer {
     font-size: 12px;
 }
 
-@keyframes slideInUp {
+@keyframes fadeInDown {
     from {
-        transform: translate3d(0, 70%, 0);
-        visibility: visible;
+        opacity: 0;
+        transform: translate3d(0, -50%, 0);
     }
 
     to {
-        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transform: none;
     }
 }
 
-.slideInUp {
-    animation-name: slideInUp;
+.fadeInDown {
+    animation-name: fadeInDown;
 }
 
-@keyframes slideInDown {
+@keyframes fadeInUp {
     from {
-        transform: translate3d(0, -70%, 0);
-        visibility: visible;
+        opacity: 0;
+        transform: translate3d(0, 50%, 0);
     }
 
     to {
-        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transform: none;
     }
 }
 
-.slideInDown {
-    animation-name: slideInDown;
+.fadeInUp {
+    animation-name: fadeInUp;
 }
