@@ -7,17 +7,9 @@
     <title>与人设计</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./css/css.css">
     <link rel="shortcut icon" href="./favicon.ico">
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?1839790e9ba77bb07ce8a1a44c02d368";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
 </head>
 <body>
 <header class="container-fluid bg-dark text-white text-center">
@@ -37,7 +29,8 @@
                     <img src="http://iph.href.lu/600x400" alt="pic" class="img-fluid mb-3" width="600" height="400">
                 </a>
                 <h6>日本传统色 Lite</h6>
-                <p class="text-secondary mb-0">WeApp</p>
+                <p class="text-secondary mb-0">WeApp
+                    <i class="fas fa-bug" data-toggle="tooltip" data-placement="bottom" title="仅提供 Bug 修复"></i></p>
             </div>
         </div>
     </div>
@@ -77,9 +70,18 @@
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/wow.min.js"></script>
 <script>
-    new WOW().init()
-</script>
-<script type='text/javascript'>
+    new WOW().init();
+
+    $('.fa-bug').tooltip();
+
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?1839790e9ba77bb07ce8a1a44c02d368";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
     (function(m, ei, q, i, a, j, s) {
         m[i] = m[i] || function() {
             (m[i].a = m[i].a || []).push(arguments)
