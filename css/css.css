@@ -47,3 +47,12 @@ footer {
 .fadeInUp {
     animation-name: fadeInUp;
 }
+
+.link {
+    font-size: 22px;
+    color: #868e96;
+}
+
+.link:hover {
+    color: #0275d8;
+}
