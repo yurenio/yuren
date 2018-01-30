@@ -56,3 +56,10 @@ footer {
 .link:hover {
     color: #0275d8;
 }
+
+@media (max-width: 767.98px) {
+    header {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+}
