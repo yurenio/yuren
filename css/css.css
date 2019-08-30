@@ -8,6 +8,10 @@ header {
     margin-bottom: 5rem;
 }
 
+.portfolio {
+    border-radius: 10px;
+}
+
 .avatar {
     border-radius: 50%;
 }
