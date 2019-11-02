@@ -52,8 +52,11 @@ footer {
     animation-name: fadeInUp;
 }
 
-.link {
+.icon {
     font-size: 22px;
+}
+
+.link {
     color: #868e96;
 }
 
