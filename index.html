@@ -25,11 +25,12 @@
         <p class="text-sm text-center text-secondary">付诸行动，让想法成为现实</p>
         <div class="row mt-5 justify-content-md-center">
             <div class="col-md-4 col-sm-12 my-3 text-center wow fadeInUp">
-                <a href="https://minapp.com/miniapp/4550/" target="_blank">
+                <div class="portfolios-item-logo" id="nippon">
                     <img src="./img/portfolios/nippon.png" alt="日本传统色 Lite" class="img-fluid mb-3 portfolio" width="200" height="200">
-                </a>
+                    <img src="./img/portfolios/nippon-code.jpg" alt="日本传统色 Lite 二维码" class="img-fluid mb-3 portfolio" width="200" height="200">
+                </div>
                 <h6>日本传统色 Lite</h6>
-                <p class="text-secondary mb-0"><a href="https://minapp.com/miniapp/4550/" target="_blank" class="link">WeApp</a></p>
+                <p class="text-secondary mb-0 portfolios-item-title" id="nipponTitle">WeApp</p>
             </div>
 
             <div class="col-md-4 col-sm-12 my-3 text-center wow fadeInUp">
@@ -90,5 +91,23 @@
 <script src="./js/wow.min.js"></script>
 <script>
     new WOW().init();
+
+    const toggleRotateClass = dom => dom.classList.toggle('portfolios-item-logo-active')
+    
+    document.getElementById('nippon').addEventListener('mouseenter', e => {
+        toggleRotateClass(e.currentTarget)
+    })
+
+    document.getElementById('nippon').addEventListener('mouseleave', e => {
+        toggleRotateClass(e.currentTarget)
+    })
+
+    document.getElementById('nipponTitle').addEventListener('mouseenter', e => {
+        toggleRotateClass(e.currentTarget.parentNode.children[0])
+    })
+
+    document.getElementById('nipponTitle').addEventListener('mouseleave', e => {
+        toggleRotateClass(e.currentTarget.parentNode.children[0])
+    })
 </script>
 </html>
