@@ -3,7 +3,8 @@ header {
     padding-bottom: 15rem;
 }
 
-.portfolios, .team {
+.portfolios,
+.team {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
@@ -69,4 +70,41 @@ footer {
         padding-top: 10rem;
         padding-bottom: 10rem;
     }
+}
+
+.portfolios-item-logo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.portfolios-item-logo img {
+    overflow: hidden;
+    transform: perspective(2000px) rotateY(0deg) rotateX(0deg) rotate(0deg);
+    transform-style: preserve-3d;
+    transition: all 0.8s cubic-bezier(0.71, 0.03, 0.56, 0.85);
+    backface-visibility: hidden;
+}
+
+.portfolios-item-logo img:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: perspective(2000px) rotateY(-180deg) rotateX(0deg) rotate(0deg);
+    z-index: 2;
+}
+
+.portfolios-item-logo-active img:first-child {
+    transform: perspective(1000px) rotateY(180deg) rotateX(0deg) rotate(0deg);
+}
+
+.portfolios-item-logo-active img:last-child {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg) rotate(0deg);
+}
+
+.portfolios-item-title {
+    cursor: pointer;
 }
